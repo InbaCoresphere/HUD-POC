@@ -6,6 +6,6 @@
     }
   ],
   "namespace": "",
-  "sfdcLoginUrl": "https://test.salesforce.com",
+  "sfdcLoginUrl": "https://coresphere-ai--uat.my.salesforce.com",
   "sourceApiVersion": "46.0"
 }

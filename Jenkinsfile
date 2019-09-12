@@ -41,6 +41,8 @@ node {
 			if (isUnix()) {
 				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
+                convert = bat returnStdout: true, script: "sfdx force:source:convert"
+                println convert
 			   rmsg = bat returnStdout: true, script: "sfdx force:mdapi:deploy -d -c -u ${HUB_ORG}"
                println rmsg
 			}
